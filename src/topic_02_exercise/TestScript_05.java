@@ -3,7 +3,6 @@ package topic_02_exercise;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import javax.lang.model.element.Element;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
