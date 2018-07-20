@@ -30,7 +30,7 @@ public class TestScript_01 {
 	
 	  
 	  //Step 03 : Click on My Account
-	  String MYACCOUNT_BUTTON = "//div[@class='footer']/div[4]/ul/li[1]/a";
+	  String MYACCOUNT_BUTTON = "//div[@class='footer']//a[contains(.,\"My Account\")]";
 	  driver.findElement(By.xpath(MYACCOUNT_BUTTON)).click();
 	 
 	  //Step 04 : Click on Create Account
