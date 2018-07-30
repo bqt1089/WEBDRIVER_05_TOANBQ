@@ -12,7 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Testscript_02_Topic_04 {
+public class Testscript_03_Topic_04 {
 	WebDriver driver;
 
 	@BeforeClass
@@ -112,7 +112,7 @@ public class Testscript_02_Topic_04 {
 
 	public void verifyByGetAttribute(String xpath, String attribute, String value) {
 		String element = driver.findElement(By.xpath(xpath)).getAttribute(attribute);
-		System.out.println(element);
+		System.out.println("Attribute = : "+element);
 		Assert.assertEquals(element, value);
 	}
 
