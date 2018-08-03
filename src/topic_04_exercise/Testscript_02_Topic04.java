@@ -34,6 +34,9 @@ public class Testscript_02_Topic04 {
 		// Jquery
 		driver.get("http://jqueryui.com/resources/demos/selectmenu/default.html");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		driver.findElement(By.xpath("//span[@id='speed-button']")).click();
+		
 		customDropdownList(DROPDOWN_NUMBER, DROPDOWN_LIST_NUMBER, itemExpected);
 		verifyFirstOption(FIRSTOPTION_NUMBER, itemExpected);
 		

@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -25,14 +26,14 @@ public class Test_Script_02_03 {
 	@Test
 	public void TC02_CheckBox() throws InterruptedException {
 		openUrl("http://demos.telerik.com/kendo-ui/styling/checkboxes");
-		click(DUAL_ZONE_CHECKBOX);
+		clickByJavaScript(DUAL_ZONE_CUBE_CHECKBOX);
 		verifySelected(DUAL_ZONE_CUBE_CHECKBOX, "Check box");
 	}
 
 	@Test
 	public void TC03_RadioButton() {
 		openUrl("http://demos.telerik.com/kendo-ui/styling/radios");
-		click(PETRO_20_RADIO_BUTTON);
+		clickByJavaScript(PETRO_20_CUBE_RADIO);
 		verifySelected(PETRO_20_CUBE_RADIO, "Radio button");
 	}
 
@@ -114,7 +115,12 @@ public class Test_Script_02_03 {
 		alert.sendKeys(value);
 		alert.accept();
 	}
-	
+	public void clickByJavaScript(String locator) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+		
+	}
 	
 
 	String DUAL_ZONE_CHECKBOX = "//label[contains(.,'Dual-zone air conditioning')]";
