@@ -1,4 +1,4 @@
-package topic_05_exercise;
+package topic_05_ex_radio_checkbox;
 
 import java.util.concurrent.TimeUnit;
 

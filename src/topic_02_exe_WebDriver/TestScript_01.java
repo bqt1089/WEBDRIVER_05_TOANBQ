@@ -1,4 +1,4 @@
-package topic_02_exercise;
+package topic_02_exe_WebDriver;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package topic_03_exercise;
+package topic_03_ex_browser_element;
 
 import java.util.concurrent.TimeUnit;
 
