@@ -15,7 +15,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.thoughtworks.selenium.Wait;
 
 public class Testscript_02_Topic04 {
 	WebDriver driver;
