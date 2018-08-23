@@ -18,10 +18,6 @@ public class TestScript_01_SendKey {
 	@BeforeClass
 	public void beforeClass() {
 		openBrowser("Chrome", "http://blueimp.github.io/jQuery-File-Upload/");
-//		System.setProperty("webdriver.safari.driver", ".//driver/SafariDriver.safariextz");
-//		driver = new SafariDriver();
-//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
 		
 		driver.manage().window().maximize();
 	}
@@ -38,6 +34,8 @@ public class TestScript_01_SendKey {
 		openBrowser("Firefox", "http://blueimp.github.io/jQuery-File-Upload/");
 		upLoadBySendKey(ADDFILE_BUTTON, IMAGE_FILE_PATH);
 		Thread.sleep(3000);
+		
+		
 	}
 
 	@AfterClass
@@ -51,9 +49,14 @@ public class TestScript_01_SendKey {
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.get(url);
-		} else {
+		} else if (browser.toLowerCase().contains("firefox")){
 			driver = new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.get(url);
+		} else if (browser.toLowerCase().contains("safari")) {
+			System.setProperty("webdriver.safari.driver", safariDriver);
+			driver = new SafariDriver();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get(url);
 		}
 	}
@@ -70,6 +73,8 @@ public class TestScript_01_SendKey {
 	
 	String workingDirectory = System.getProperty("user.dir");
 	String IMAGE_FILE_PATH = workingDirectory + "//image/Upload1.png";
+	
+	String safariDriver = workingDirectory + "//driver/SafariDriver.safariextz";
 
 	
 }
