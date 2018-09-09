@@ -84,7 +84,7 @@ public class TestScript_01_SendKey {
 	String IMAGE_NAME = "//image/Upload1.png";
 	
 	String workingDirectory = System.getProperty("user.dir");
-	String IMAGE_FILE_PATH = workingDirectory + "/image/Upload1.png";
+	String IMAGE_FILE_PATH = workingDirectory + "//image/Upload1.png";
 	String UPLOADED_AREA = "//p[@class='name']";
 	
 	String safariDriver = workingDirectory + "//driver/SafariDriver.safariextz";
