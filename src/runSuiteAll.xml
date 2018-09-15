@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Automation All Test Demo 2+3" parallel="false">
+	
+	<suite-files>
+		<suite-file path = "runSuite01.xml"/>
+		<suite-file path = "runSuite02.xml"/>
+	</suite-files>
+
+</suite> <!-- Suite -->
+

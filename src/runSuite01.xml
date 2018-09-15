@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Automation Test Demo 02" parallel="false">
+
+
+	<!-- <groups> <run> <include name="cake" /> <include name="candy" /> </run> 
+		</groups> -->
+
+
+	<!-- <test name="Test"> <classes> <class name="topic_11_TestNG.TestNG_Annotations_02_Group" 
+		/> </classes> </test> Test -->
+
+
+	<!-- <test name="Test"> <classes> <class name="topic_11_TestNG.TestNG_DataProviders" 
+		/> </classes> </test> -->
+
+	<test name="Run on Firefox">
+		<parameter name="browser" value="firefox" />
+		<parameter name="user" value="automationvalid_01@gmail.com" />
+		<parameter name="pass" value="111111" />
+		<classes>
+			<class name="topic_11_TestNG.TestNG_Loop" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->
+

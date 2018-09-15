@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests" thread-count="3">
+
+	<test name="Run on Chrome">
+	<parameter name = "browser" value = "chrome" />
+	<parameter name = "user" value = "automationvalid_01@gmail.com" />
+	<parameter name = "pass" value = "111111" />
+		<classes>
+			<class name="topic_11_TestNG.TestNG_Parameter_Multibrowser" />
+		</classes>
+	</test> 
+	
+	<test name="Run on Firefox">
+	<parameter name = "browser" value = "firefox" />
+	<parameter name = "user" value = "automationvalid_02@gmail.com" />
+	<parameter name = "pass" value = "111111" />
+		<classes>
+			<class name="topic_11_TestNG.TestNG_Parameter_Multibrowser" />
+		</classes>
+	</test> 
+	
+	<test name="Run on Chrome Headless">
+	<parameter name = "browser" value = "chrome_headless" />
+	<parameter name = "user" value = "automationvalid_02@gmail.com" />
+	<parameter name = "pass" value = "111111" />
+		<classes>
+			<class name="topic_11_TestNG.TestNG_Parameter_Multibrowser" />
+		</classes>
+	</test> 
+	
+	
+  
+  
+</suite> <!-- Suite -->
