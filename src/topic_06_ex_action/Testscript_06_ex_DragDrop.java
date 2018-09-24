@@ -35,7 +35,7 @@ public class Testscript_06_ex_DragDrop {
 
 		Actions dragDrop = new Actions(driver);
 		dragDrop.dragAndDrop(sourceTarget, dropPlace).perform();
-		;
+
 
 		// Verify before drag and drop
 		verifyText(DROP_PLACE, "You did great!");

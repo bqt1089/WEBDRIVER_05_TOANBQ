@@ -90,6 +90,14 @@ public class Test_Script_02_03 {
 		Assert.assertTrue(element.isSelected());
 		System.out.println( value +" is selected ");
 	}
+	
+	public void checkToCheckBox(String locator) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		if (!element.isSelected()) {
+			element.click();
+		}
+	}
+	
 	public void verifyTextAlert (String locator, String value) {
 		WebElement element =driver.findElement(By.xpath(locator));
 		String actual = element.getText();
