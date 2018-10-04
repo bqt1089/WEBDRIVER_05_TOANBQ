@@ -1,6 +1,6 @@
 package topic_12_javafortester;
 
-public class topic_12_JavaForTester {
+public class javaForTester_Valiable {
 	public static void main(String args[]) {
 
 		/* ====Boolean===== */
