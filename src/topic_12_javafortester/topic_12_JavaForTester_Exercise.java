@@ -75,7 +75,7 @@ public class topic_12_JavaForTester_Exercise {
 				countNum++;
 			}
 		}
-		System.out.println("So ky tu la so trong chuoi = " + countNum);
 
+		System.out.println("So ky tu la so trong chuoi = " + countNum);
 	}
 }
